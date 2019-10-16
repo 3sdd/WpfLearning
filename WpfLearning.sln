@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageBox", "MessageBox\MessageBox.csproj", "{7E651A11-6F85-4E38-B549-9B65CF07A177}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrayApp", "TrayApp\TrayApp.csproj", "{3FCE0AEA-B927-49EF-AD34-915DFFE6F93E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrayApp", "TrayApp\TrayApp.csproj", "{3FCE0AEA-B927-49EF-AD34-915DFFE6F93E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBar", "ProgressBar\ProgressBar.csproj", "{3501547E-91C3-43A8-BE4A-A06586A497A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3FCE0AEA-B927-49EF-AD34-915DFFE6F93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FCE0AEA-B927-49EF-AD34-915DFFE6F93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FCE0AEA-B927-49EF-AD34-915DFFE6F93E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3501547E-91C3-43A8-BE4A-A06586A497A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3501547E-91C3-43A8-BE4A-A06586A497A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3501547E-91C3-43A8-BE4A-A06586A497A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3501547E-91C3-43A8-BE4A-A06586A497A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

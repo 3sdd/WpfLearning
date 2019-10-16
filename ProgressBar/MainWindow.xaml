@@ -1,0 +1,15 @@
+﻿<Window x:Class="ProgressBar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgressBar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ProgressBar HorizontalAlignment="Center" Height="28" Margin="0,28,0,0" VerticalAlignment="Top" Width="670" Value="{Binding Progress}"/>
+        <Button Content="実行" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Height="40" Width="164" Click="Button_Click"/>
+        <ProgressBar HorizontalAlignment="Center" Height="28" Margin="0,189,0,0" VerticalAlignment="Top" Width="670"  IsIndeterminate="True"/>
+
+    </Grid>
+</Window>
