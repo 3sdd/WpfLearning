@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageBox", "MessageBox\Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrayApp", "TrayApp\TrayApp.csproj", "{3FCE0AEA-B927-49EF-AD34-915DFFE6F93E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBar", "ProgressBar\ProgressBar.csproj", "{3501547E-91C3-43A8-BE4A-A06586A497A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgressBar", "ProgressBar\ProgressBar.csproj", "{3501547E-91C3-43A8-BE4A-A06586A497A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewWindow", "NewWindow\NewWindow.csproj", "{67448086-E394-4768-81F6-AC52CEE70CE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3501547E-91C3-43A8-BE4A-A06586A497A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3501547E-91C3-43A8-BE4A-A06586A497A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3501547E-91C3-43A8-BE4A-A06586A497A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67448086-E394-4768-81F6-AC52CEE70CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67448086-E394-4768-81F6-AC52CEE70CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67448086-E394-4768-81F6-AC52CEE70CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67448086-E394-4768-81F6-AC52CEE70CE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
