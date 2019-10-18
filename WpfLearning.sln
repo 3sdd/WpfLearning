@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrayApp", "TrayApp\TrayApp.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgressBar", "ProgressBar\ProgressBar.csproj", "{3501547E-91C3-43A8-BE4A-A06586A497A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewWindow", "NewWindow\NewWindow.csproj", "{67448086-E394-4768-81F6-AC52CEE70CE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewWindow", "NewWindow\NewWindow.csproj", "{67448086-E394-4768-81F6-AC52CEE70CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadFile", "DownloadFile\DownloadFile.csproj", "{D7D1428A-3F54-4B55-A134-131A819F6C31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{67448086-E394-4768-81F6-AC52CEE70CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67448086-E394-4768-81F6-AC52CEE70CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67448086-E394-4768-81F6-AC52CEE70CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D1428A-3F54-4B55-A134-131A819F6C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D1428A-3F54-4B55-A134-131A819F6C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D1428A-3F54-4B55-A134-131A819F6C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D1428A-3F54-4B55-A134-131A819F6C31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
