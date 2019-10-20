@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -31,38 +32,49 @@ namespace DownloadFile
             {
                 DownloadProgressBar.Value = e;
             };
+            
+            downloadPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), defaultDownloadDir, "file.mp4");
+            PathTextBlock.Text = downloadPath;
+
         }
 
         static readonly HttpClient client = new HttpClient();
         CancellationTokenSource tokenSource = new CancellationTokenSource();
         bool isDownloading = false;
+        static string defaultDownloadDir = "Downloads";
+        string downloadPath = "";
+        Progress<float> progress = new Progress<float>();
+
         private async void DownloadButton_Click(object sender, RoutedEventArgs e)
         {
             isDownloading = true;
             StatusLabel.Content = "ダウンロード中";
             //using (this.tokenSource = new CancellationTokenSource())
             //{
+            if (!Directory.Exists(System.IO.Path.GetDirectoryName(downloadPath)))
+            {
+                Directory.CreateDirectory(System.IO.Path.GetDirectoryName(downloadPath));
+            }
             await DownloadFileAsync();
             //}
             StatusLabel.Content = "何もしてない";
             isDownloading = false;
         }
 
-        Progress<float> progress = new Progress<float>();
 
         async Task DownloadFileAsync()
         {
-            
+
             try
             {
-                
-                var url = "https://video.kurashiru.com/production/videos/6e7eaa48-4ead-4c15-9dfa-472652d44497/original.mp4";
 
-                using (tokenSource=new CancellationTokenSource())
-                using (var file = new FileStream("./test1.mp4", FileMode.Create, FileAccess.Write, FileShare.None))
+                var url = "https://video.kurashiru.com/production/videos/6e7eaa48-4ead-4c15-9dfa-472652d44497/original.mp4";
+                //var filePath = Path.Combine(downloadDir, "./test1.mp4");
+                using (tokenSource = new CancellationTokenSource())
+                using (var file = new FileStream(this.downloadPath, FileMode.Create, FileAccess.Write, FileShare.None))
                 {
                     await client.DownloadAsync(url, file, progress, tokenSource.Token);
-                }             
+                }
             }
             catch (TaskCanceledException tcx)
             {
@@ -88,6 +100,20 @@ namespace DownloadFile
             if (!isDownloading)
                 return;
             tokenSource.Cancel();
+        }
+
+        private void RefButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new SaveFileDialog();
+            dialog.Title = "ファイルを開く";
+            dialog.Filter = "動画ファイル|*.mp4";
+            dialog.InitialDirectory = System.IO.Path.GetDirectoryName(downloadPath);
+
+            if (dialog.ShowDialog() == true)
+            {
+                PathTextBlock.Text = dialog.FileName;
+                downloadPath = dialog.FileName;
+            }
         }
     }
 }

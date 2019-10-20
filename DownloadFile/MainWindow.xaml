@@ -12,6 +12,9 @@
         <Button x:Name="CancelButton" Content="キャンセル" HorizontalAlignment="Left" Margin="400,372,0,0" VerticalAlignment="Top" Height="23" Width="122" Click="CancelButton_Click"/>
         <Label Content="状態" HorizontalAlignment="Left" Margin="280,250,0,0" VerticalAlignment="Top" Height="35" Width="97" FontSize="20"/>
         <Label x:Name="StatusLabel" Content="none" HorizontalAlignment="Left" Margin="396,250,0,0" VerticalAlignment="Top" Height="35" Width="187" FontSize="20"/>
+        <Button x:Name="RefButton" Content="参照" HorizontalAlignment="Left" Margin="609,73,0,0" VerticalAlignment="Top" Height="27" Width="73" Click="RefButton_Click"/>
+        <TextBlock x:Name="PathTextBlock" HorizontalAlignment="Left" Margin="130,68,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="453"/>
+        <Label Content="保存場所" HorizontalAlignment="Left" Margin="32,74,0,0" VerticalAlignment="Top" Height="26" Width="63"/>
 
     </Grid>
 </Window>
