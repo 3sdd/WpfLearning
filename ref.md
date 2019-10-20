@@ -15,3 +15,7 @@ https://blog.okazuki.jp/archive/category/WPF4.5
 - menu
     - https://blog.okazuki.jp/entry/2014/08/12/122541
     - [menuのショートカット](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/ms748845(v=vs.85)?redirectedfrom=MSDN)
+
+- timer 
+    - [button まとめる](http://blog.pionet.co.jp/experience/archives/2118)
+    - [timer](https://www.atmarkit.co.jp/ait/articles/0511/11/news118.html)
